@@ -17,6 +17,7 @@ Matrix Correlation: Calculate correlation matrices for each omic type and identi
 Canonical Correlation Analysis (CCA): Use CCA to identify relationships between different omic layers and find shared latent variables.
 Multi-Omics Factor Analysis (MOFA): Implement MOFA to capture the variance across multiple datasets and identify key factors that explain the data.
 Network-based Integration: Construct a multi-layer network (nodes representing genes, proteins, etc.) and integrate data using network analysis techniques.
+
 ## Analysis
 Differential Analysis: Identify differentially expressed genes and proteins across conditions (e.g., healthy vs. diseased) using appropriate statistical tests.
 Pathway Enrichment Analysis: Perform enrichment analysis (e.g., using GSEA or DAVID) to see if differentially expressed genes/proteins are enriched in specific biological pathways.
