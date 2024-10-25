@@ -44,20 +44,20 @@ significantGenes = transcriptomicData.Genes(pValues < alpha); % Replace 'Genes' 
 disp('Significant Genes:');
 disp(significantGenes);
 
-% Step 7: (Optional) Network Construction
+% Step 7:  Network Construction
 % Create a simple network based on a correlation threshold
 threshold = 0.5; % Define a threshold
 [rows, cols] = find(abs(correlationMatrix) > threshold); % Find significant correlations
 
-% Create an adjacency matrix for visualization (optional)
+% Create an adjacency matrix for visualization 
 adjacencyMatrix = zeros(size(correlationMatrix));
 adjacencyMatrix(sub2ind(size(correlationMatrix), rows, cols)) = 1;
 
-% (Optional) Visualize the network
+%  Visualize the network
 figure;
 g = digraph(adjacencyMatrix);
 plot(g, 'Layout', 'layered', 'NodeLabel', transcriptomicData.Genes);
 
-% Step 8: (Optional) Save Results
+% Step 8:  Save Results
 writetable(transcriptomicData, 'transcriptomic_results.csv'); % Save results to CSV
 
